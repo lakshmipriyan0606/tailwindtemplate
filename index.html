@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-900 w-screen h-screen overflow-x-hidden">
+    <!--==========================================Start-Header=========================================== -->
+    <header>
+        <div class="
+        lg:mt-5
+        lg:container
+        lg:flex 
+        lg:justify-evenly
+        lg:mx-auto">
+            <div class=" 
+            lg:flex flex-col
+            lg:gap-10     
+            ">
+                <div class="flex border-r border-r-gray-700">
+                    <img class="lg:mr-5 mx-auto mt-5 lg:mx-0 lg:mt-0 " src="images/logo.png" alt="logo">
+                    <button onclick="navbar()" class="lg:hidden"><i
+                            class="fa fa-bars text-3xl mt-4 mr-24  text-white hover:text-pink-600"></i></button>
+                </div>
+                <div id="hidden" class="w-full h-80 flex  bg-white mt-5 mr-10 rounded-md block hidden">
+                    <ul class=" lg:flex lg:flex-col lg:space-x-8 flex flex-col gap-8 mx-auto my-auto w-11/12">
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400 mx-auto     hover:text-pink-600 transition-all" href="index.html">Home</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400  mx-auto  hover:text-pink-600 transition-all" href="about.html">About</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400  mx-auto  hover:text-pink-600 transition-all" href="detail.html">Detail</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400   mx-auto  hover:text-pink-600 transition-all " href="stream.html">Streams</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400   mx-auto  hover:text-pink-600 transition-all " href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="
+            hidden
+            lg:block
+            border
+            border-gray-400 
+            rounded-3xl
+            lg:w-62
+            lg:h-12
+            mt-1
+            bg-gray-800
+            ">
+                <input class="bg-transparent border-none p-3 outline-none text-base text-gray-200" type="text"
+                    placeholder="Type Something..." name="search" id="search"><i
+                    class="fa fa-light fa-magnifying-glass mt-3 mr-3 text-gray-200 cursor-pointer hover:text-gray-400"></i>
+            </div>
+            <div class="
+             lg:mt-4
+            ">
+                <ul class=" hidden lg:flex lg:space-x-16">
+                    <li><a class="text-gray-400  hover:text-pink-600 transition-all" href="index.html">Home</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all" href="about.html">About</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all" href="detail.html">Detail</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all " href="stream.html">Streams</a></li>
+                </ul>
+            </div>
+            <div class="
+            hidden
+            lg:flex
+            lg:w-36
+            lg:h-11
+            lg:gap-2
+            mt-2
+            bg-gray-800
+            rounded-full
+            hover:bg-pink-500 cursor-pointer transition-colors group
+            ">
+                <a href="profile.html" class="text-lg  lg:ml-3 lg:mt-2 text-gray-400 hover:text-white">Profile</a> <img
+                    class="rounded-full mx-5  " src="images/profile-header.jpg" alt="Profile">
+            </div>
+        </div>
+    </header>
+    <!--==========================================End-Header=========================================== -->
+    <!--==========================================Start-Herosection=========================================== -->
+
+
+    <div class="bg-gray-800  lg:w-5/6  p-5 rounded-3xl  lg:my-10  lg:mx-28 lg:p-7 ">
+        <div class=" lg:w-4/5 w-4/5 h-96 ml-10 lg:h-80 lg:ml-24 rounded-3xl bg-no-repeat bg-cover bg-bottom lg:bg-no-repeat lg:bg-cover lg:bg-center"
+            style="background-image: url(images/banner-bg.jpg);">
+            <div class="lg:pt-8 lg:pl-8 ">
+                <h2 class="text-base text-center lg:my-3 my-5 p-7 lg:p-0 lg:text-left  text-gray-200">Welcome To Cyborg
+                </h2>
+                <h3 class="text-4xl text-center my-8 lg:my-5 lg:text-left text-gray-200 font-extrabold"> <span
+                        class="text-pink-500 ">BROWSE</span> OUR <br> POPULAR GAMES HERE</h3>
+                <button
+                    class="rounded-full flex mx-auto my-5 lg:mx-0 border-none bg-pink-400 text-lg p-2 text-gray-200  hover:bg-white hover:text-pink-600">Browse
+                    Now</button>
+            </div>
+        </div>
+        <!--=========================================End-Herosection=========================================== --> 
+
+        <!--=========================================Start-Popular=========================================== -->    
+        <div class="bg-gray-700 rounded-2xl">
+            <div class="ml-8 mt-12 pt-5">
+                <span class="text-4xl font-bold text-gray-200 border-b-4 border-b-gray-200" >Most Popular</span>  <span class="text-pink-600 text-4xl font-bold ml-2">Right Now</span>
+            </div>
+            <div class="lg:flex lg:flex-row flex flex-col gap-5">
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-01.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Fortine</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Sandbox</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-02.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Pubg</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Battle </h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-03.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Data-2</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Stream</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-04.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">CS-GO</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Action</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+          </div>
+           
+            <div class="lg:flex lg:flex-row flex flex-col gap-5">
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-05.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Minicraft</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Action</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-06.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Eaglefly</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Surviual </h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-07.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Warface</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Max-3D</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+                <div class="bg-gray-900 lg:w-1/4 w-3/4 ml-16 mt-5 lg:my-7 lg:mx-5 rounded-2xl">
+                 <div class="flex">
+                     <img class="object-fill mx-auto w-10/12 lg:w-9/12 mt-6 object-center rounded-xl"  src="images/popular-08.jpg" alt="game">
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-bold text-lg">Warcraft</h1>
+                     <h2><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-200">4.8</span></h2>
+                 </div>
+                 <div class="flex justify-between mx-10 my-3">
+                     <h1 class="text-gray-200 font-light text-lg ">Legend</h1>
+                     <h2><i class="fa-solid fa-download text-pink-400"></i> <span class="text-gray-200">2.3M</span></h2>
+                 </div>
+                </div>
+          </div>
+          <button
+          class="rounded-full flex mx-auto my-5   lg:mx-auto border-none bg-pink-400 text-lg p-2 text-gray-200  hover:bg-white hover:text-pink-600">Discover Popular</button>
+        </div>
+       <!--=========================================End-Popular=========================================== --> 
+
+    <!--=========================================Start-library=========================================== -->
+
+      <div class="bg-gray-700 rounded-3xl my-7 ">
+        <div class="ml-8 mt-12 pt-5">
+            <span class="text-4xl font-bold text-gray-200 border-b-2 border-gray-200 " >Your Gaming  </span>  <span class="text-pink-600 text-4xl font-bold ml-2">Library</span>
+        </div>
+        <div class="lg:flex lg:flex-col">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-01.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">Data 2</h1>
+                      <h1 class="text-base font-extralight">Sandbox</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">24/08/2016</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">633 H 22 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                  <Button class="mx-auto lg:mx-0 bg-transparent border border-gray-200 rounded-2xl p-2 text-gray-200">Downloaded</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 lg:ml-11 ml-3 border border-gray-600 ">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-02.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">Fortine</h1>
+                      <h1 class="text-base font-extralight">Action</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">09/02/2018</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">399 H 19 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                <Button class="mx-auto lg:mx-0 bg-transparent border border-pink-500 rounded-2xl p-2 text-pink-500 hover:bg-white hover:text-pink-400">Download</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 lg:ml-11 ml-3 border border-gray-600 ">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-03.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">CS-GO</h1>
+                      <h1 class="text-base font-extralight">Adventure</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">24/08/2019</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">453 H 12 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                <Button class="mx-auto lg:mx-0 bg-transparent border border-gray-200 rounded-2xl p-2 text-gray-200">Downloaded</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 ml-3 lg:ml-11 border border-gray-600 ">
+        </div>
+        <button
+        class="rounded-full flex mx-auto my-5   lg:mx-auto border-none bg-pink-400 text-lg p-2 text-gray-200  hover:bg-white hover:text-pink-600">View Your Library</button>
+      </div>
+    <!--===========================================End-library========================================= -->
+    </div>
+
+    <!--==========================================Start-Footer======================================== -->
+
+      <div class="flex">
+        <h1 class="mx-auto my-4 text-gray-200" >Copyright © 2036 Cyborg Gaming Company. All rights reserved.</h1>
+      </div>
+    <!--==========================================End-Footer======================================== -->
+
+
+
+
+   
+
+
+  
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

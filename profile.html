@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-900 w-screen h-screen overflow-x-hidden">
+    <!--==========================================Start-Header=========================================== -->
+    <header>
+        <div class="
+        lg:mt-5
+        lg:container
+        lg:flex 
+        lg:justify-evenly
+        lg:mx-auto">
+            <div class=" 
+            lg:flex flex-col
+            lg:gap-10     
+            ">
+                <div class="flex border-r border-r-gray-700">
+                    <img class="lg:mr-5 mx-auto mt-5 lg:mx-0 lg:mt-0 " src="images/logo.png" alt="logo">
+                    <button onclick="navbar()" class="lg:hidden"><i
+                            class="fa fa-bars text-3xl mt-4 mr-24  text-white hover:text-pink-600"></i></button>
+                </div>
+                <div id="hidden" class="w-full h-80 flex  bg-white mt-5 mr-10 rounded-md block hidden">
+                    <ul class=" lg:flex lg:flex-col lg:space-x-8 flex flex-col gap-8 mx-auto my-auto w-11/12">
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400 mx-auto     hover:text-pink-600 transition-all" href="index.html">Home</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400  mx-auto  hover:text-pink-600 transition-all" href="about.html">About</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400  mx-auto  hover:text-pink-600 transition-all" href="detail.html">Detail</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400   mx-auto  hover:text-pink-600 transition-all " href="stream.html">Streams</a>
+                        </li>
+                        <li class="border-b border-b-gray-300 flex"><a
+                                class="text-gray-400   mx-auto  hover:text-pink-600 transition-all " href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="
+            hidden
+            lg:block
+            border
+            border-gray-400 
+            rounded-3xl
+            lg:w-62
+            lg:h-12
+            mt-1
+            bg-gray-800
+            ">
+                <input class="bg-transparent border-none p-3 outline-none text-base text-gray-200" type="text"
+                    placeholder="Type Something..." name="search" id="search"><i
+                    class="fa fa-light fa-magnifying-glass mt-3 mr-3 text-gray-200 cursor-pointer hover:text-gray-400"></i>
+            </div>
+            <div class="
+             lg:mt-4
+            ">
+                <ul class=" hidden lg:flex lg:space-x-16">
+                    <li><a class="text-gray-400  hover:text-pink-600 transition-all" href="index.html">Home</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all" href="about.html">About</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all" href="detail.html">Detail</a></li>
+                    <li><a class="text-gray-400 hover:text-pink-600 transition-all " href="stream.html">Streams</a></li>
+                </ul>
+            </div>
+            <div class="
+            hidden
+            lg:flex
+            lg:w-36
+            lg:h-11
+            lg:gap-2
+            mt-2
+            bg-gray-800
+            rounded-full
+            hover:bg-pink-500 cursor-pointer transition-colors group
+            ">
+                <a href="profile.html" class="text-lg  lg:ml-3 lg:mt-2 text-gray-400 hover:text-white">Profile</a> <img
+                    class="rounded-full mx-5  " src="images/profile-header.jpg" alt="Profile">
+            </div>
+        </div>
+    </header>
+    <!--==========================================End-Header=========================================== -->
+
+
+    <!--==========================================Start-Profile=========================================== -->
+
+     <div>
+        <div class="bg-gray-800 lg:mx-16 lg:px-5 lg:py-5 my-10 rounded-3xl">
+           <div class="bg-gray-900 lg:mx-12 lg:my-5  rounded-3xl ">
+            <div class="bg-gray-900 lg:mx-12 lg:my-5  lg:py-8 lg:px-5 lg:flex lg:flex-row lg:justify-evenly rounded-3xl flex flex-col ">
+                <div class="flex lg:block">
+                    <img src="images/profile.jpg" class="lg:w-64 rounded-3xl mx-auto lg:mx-0" alt="profile">
+                </div>
+                <div class="lg:w-2/6 lg:flex lg:flex-col lg:gap-6  flex flex-col justify-center items-center my-6 gap-7">
+                    <div>
+                        <button class="border-none bg-pink-500 text-gray-200 text-xl  w-28 rounded-3xl ">Offline</button>
+                        <h1 class="text-2xl font-bold text-white mt-4">Alan Smithee</h1>
+                    </div>
+                    <div>
+                        <p class="text-gray-500 ">You Haven't Gone Live yet. Go Live By <br> Touching The Button Below.
+                        </p>
+                    </div>
+                    <div>
+                        <button class=" border rounded-3xl p-2  border-pink-500 bg-transparent text-pink-500 hover:bg-white hover:cursor-pointer hover:text-pink-500 hover:border-none mx-auto ">Start Live Stream</button>
+                    </div>
+                </div> 
+                <div class="lg:flex lg:flex-col lg:gap-5 bg-gray-800 lg:rounded-3xl rounded-lg lg:px-10 lg:py-5 mx-14 flex flex-col gap-6 my-7">
+                    <div class="lg:flex lg:flex-row lg:justify-between flex flex-row justify-around">
+                        <h1 class="text-gray-200"> Downloaded</h1> 
+                        <p class="text-pink-500">03</p>
+                    </div>
+                    <hr class="border-gray-600">
+                    <div class="lg:flex lg:flex-row lg:justify-between lg:gap-2 flex flex-row justify-around">
+                        <h1 class="text-gray-200">Friends Online</h1> 
+                        <p class="text-pink-500">10</p>
+                    </div>
+                    <hr class="border-gray-600">
+                    <div class="lg:flex lg:flex-row lg:justify-between lg:gap-1 flex flex-row justify-around gap-6">
+                        <h1 class="text-gray-200">Live </h1> 
+                        <p class="text-pink-500">None</p>
+                    </div>
+                    <hr class="border-gray-600">
+                    <div class="lg:flex lg:flex-row lg:justify-between flex flex-row justify-around">
+                        <h1 class="text-gray-200">Clips</h1> 
+                        <p class="text-pink-500">20</p>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!--==========================================Start-clip=========================================== -->
+            <h1 class="lg:my-7 my-10 text-pink-500 text-4xl text-center font-extrabold"><span
+                class="my-7 text-gray-200 text-4xl lg:text-left font-extrabold border-b-4 border-b-gray-200">
+               Your Most Popular</span> Clip</h1>
+          
+            <div class="lg:flex lg:flex-row flex flex-col gap-5 lg:justify-evenly lg:my-5">
+                <div class="bg-gray-700 rounded-3xl p-4 lg:flex lg:flex-col lg:gap-2 mx-14 lg:mx-0">
+                    <div>
+                        <img src="images/clip-01.jpg" class="rounded-3xl  w-full" alt="clip-images">
+                    </div> 
+                    <div class="lg:flex lg:flex-row lg:justify-around flex justify-around my-3">
+                        <h1 class="text-gray-200">First Clip</h1>
+                        <h1 class="text-gray-200"><i class="fa-solid fa-eye text-pink-500 "></i> 250</h1>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-3xl p-4 lg:flex lg:flex-col lg:gap-2 mx-14 lg:mx-0">
+                    <div>
+                        <img src="images/clip-02.jpg" class="rounded-3xl lg:w-auto w-full" alt="clip-images">
+                    </div> 
+                    <div class="lg:flex lg:flex-row lg:justify-around flex justify-around my-3">
+                        <h1 class="text-gray-200">Second Clip</h1>
+                        <h1 class="text-gray-200"><i class="fa-solid fa-eye text-pink-500 "></i> 121</h1>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-3xl p-4 lg:flex lg:flex-col lg:gap-2 mx-14 lg:mx-0">
+                    <div>
+                        <img src="images/clip-03.jpg" class="rounded-3xl lg:w-auto w-full" alt="clip-images">
+                    </div> 
+                    <div class="lg:flex lg:flex-row lg:justify-around flex justify-around my-3">
+                        <h1 class="text-gray-200">Third Clip</h1>
+                        <h1 class="text-gray-200"><i class="fa-solid fa-eye text-pink-500 "></i> 67</h1>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-3xl p-4 lg:flex lg:flex-col lg:gap-2 mx-14 lg:mx-0">
+                    <div>
+                        <img src="images/clip-04.jpg" class="rounded-3xl lg:w-auto w-full" alt="clip-images">
+                    </div> 
+                    <div class="lg:flex lg:flex-row lg:justify-around flex justify-around my-3">
+                        <h1 class="text-gray-200">Fourth Clip</h1>
+                        <h1 class="text-gray-200"><i class="fa-solid fa-eye text-pink-500 "></i> 178</h1>
+                    </div>
+                </div>
+                
+            </div>
+           <div class="flex my-5">
+            <button class=" border rounded-3xl p-2  border-pink-500 bg-transparent text-pink-500 hover:bg-white hover:cursor-pointer hover:text-pink-500 hover:border-none mx-auto ">Load More Clips</button>
+           </div>
+           <!--==========================================Start-clip=========================================== -->
+           </div>
+                <!--=========================================Start-library=========================================== -->
+
+    <div class="bg-gray-900 rounded-3xl my-7 ">
+        <div class="ml-8 mt-12 pt-5">
+            <span class="text-4xl font-bold text-gray-200 border-b-2 border-gray-200 " >Your Gaming  </span>  <span class="text-pink-600 text-4xl font-bold ml-2">Library</span>
+        </div>
+        <div class="lg:flex lg:flex-col">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-01.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">Data 2</h1>
+                      <h1 class="text-base font-extralight">Sandbox</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">24/08/2016</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">633 H 22 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                  <Button class="mx-auto lg:mx-0 bg-transparent border border-gray-200 rounded-2xl p-2 text-gray-200">Downloaded</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 lg:ml-11 ml-3 border border-gray-600 ">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-02.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">Fortine</h1>
+                      <h1 class="text-base font-extralight">Action</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">09/02/2018</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">399 H 19 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                <Button class="mx-auto lg:mx-0 bg-transparent border border-pink-500 rounded-2xl p-2 text-pink-500 hover:bg-white hover:text-pink-400">Download</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 lg:ml-11 ml-3 border border-gray-600 ">
+           <div class="lg:flex lg:flex-row  lg:justify-evenly lg:items-center my-5 flex  flex-col ">
+            <div>
+                <img class="rounded-2xl w-20 mx-auto lg:mx-0" src="images/game-03.jpg" alt="game">  
+              </div>
+               <div class="lg:flex lg:flex-row lg:gap-14 flex flex-row my-5  justify-evenly">
+                  <div class="text-gray-100">
+                      <h1 class="text-xl font-bold">CS-GO</h1>
+                      <h1 class="text-base font-extralight">Adventure</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Date Added</h1>
+                      <h1 class="text-base  font-extralight">24/08/2019</h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Hours Played</h1>
+                      <h1 class="text-base font-extralight">453 H 12 Mins </h1>
+                  </div>
+                  <div class="text-gray-200">
+                      <h1 class="text-xl font-bold">Currently</h1>
+                      <h1 class="text-base font-extralight">Downloaded</h1>
+                  </div>
+               </div>
+              <div class="flex">
+                <Button class="mx-auto lg:mx-0 bg-transparent border border-gray-200 rounded-2xl p-2 text-gray-200">Downloaded</Button>
+              </div>
+           </div>
+           <hr class="w-11/12 ml-3 lg:ml-11 border border-gray-600 ">
+        </div>
+        <button
+        class="rounded-full flex mx-auto my-5   lg:mx-auto border-none bg-pink-400 text-lg p-2 text-gray-200  hover:bg-white hover:text-pink-600">View Your Library</button>
+      </div>
+    <!--===========================================End-library========================================= -->
+    </div>
+    </div>
+      
+     </div>
+     
+      <!--==========================================Start-Footer======================================== -->
+
+      <div class="flex">
+        <h1 class="mx-auto my-4 text-gray-200" >Copyright © 2036 Cyborg Gaming Company. All rights reserved.</h1>
+      </div>
+    <!--==========================================End-Footer======================================== -->
+    <!--==========================================End-Profile=========================================== -->
+
+
+    
+
+    
+    
+
+     
+
+
+
+     
+ 
+
+    
+
+
+
+
+ <script src="script.js"></script>
+        
+    </body>
